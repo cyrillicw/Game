@@ -210,7 +210,7 @@ function draw(tick) {
 //   tick += 1
 // }
 document.addEventListener("keydown", handleKeyPress);
-const url = "ws://192.168.1.106:8080"
+const url = `wss://${window.location.host}`
 const connection = new WebSocket(url)
 connection.onopen = e => {
   // connection.send(JSON.stringify({'hello' : 'hi'}));
